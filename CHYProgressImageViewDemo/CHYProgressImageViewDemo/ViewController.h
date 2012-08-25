@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CHYPorgressImageView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    __weak IBOutlet CHYPorgressImageView *_progressImageView;
+}
 
+- (IBAction)progressValueChanged:(id)sender;
+- (IBAction)verticalProgressToggled:(id)sender;
+- (IBAction)grayscaleBackgroundToggled:(id)sender;
 @end

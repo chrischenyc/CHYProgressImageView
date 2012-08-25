@@ -22,6 +22,7 @@
 
 - (void)viewDidUnload
 {
+    _progressImageView = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -35,4 +36,18 @@
     }
 }
 
+- (IBAction)progressValueChanged:(id)sender {
+    UISlider *progressSlider = sender;
+    _progressImageView.progress = progressSlider.value;
+}
+
+- (IBAction)verticalProgressToggled:(id)sender {
+    UISwitch *vertialProgressSwitch = sender;
+    _progressImageView.verticalProgress = vertialProgressSwitch.on;
+}
+
+- (IBAction)grayscaleBackgroundToggled:(id)sender {
+    UISwitch *grayscaleBgSwitch = sender;
+    _progressImageView.hasGrayscaleBackground = grayscaleBgSwitch.on;
+}
 @end

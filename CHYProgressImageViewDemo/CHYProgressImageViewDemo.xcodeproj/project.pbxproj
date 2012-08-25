@@ -20,6 +20,8 @@
 		83BCDF0715E9015F0056275E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83BCDF0615E9015F0056275E /* Icon@2x.png */; };
 		83BCDF0915E901650056275E /* Icon~iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 83BCDF0815E901650056275E /* Icon~iPad.png */; };
 		83BCDF0B15E901670056275E /* Icon~iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83BCDF0A15E901670056275E /* Icon~iPad@2x.png */; };
+		83BCDF0F15E9040D0056275E /* CHYPorgressImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BCDF0E15E9040D0056275E /* CHYPorgressImageView.m */; };
+		83BCDF1115E90A580056275E /* homero-simpson.png in Resources */ = {isa = PBXBuildFile; fileRef = 83BCDF1015E90A580056275E /* homero-simpson.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,9 @@
 		83BCDF0615E9015F0056275E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		83BCDF0815E901650056275E /* Icon~iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon~iPad.png"; sourceTree = "<group>"; };
 		83BCDF0A15E901670056275E /* Icon~iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon~iPad@2x.png"; sourceTree = "<group>"; };
+		83BCDF0D15E9040D0056275E /* CHYPorgressImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHYPorgressImageView.h; sourceTree = "<group>"; };
+		83BCDF0E15E9040D0056275E /* CHYPorgressImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHYPorgressImageView.m; sourceTree = "<group>"; };
+		83BCDF1015E90A580056275E /* homero-simpson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homero-simpson.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,7 @@
 				83BCDF0815E901650056275E /* Icon~iPad.png */,
 				83BCDF0615E9015F0056275E /* Icon@2x.png */,
 				83BCDF0415E9015D0056275E /* Icon.png */,
+				83BCDF0C15E903F60056275E /* CHYProgressImageView */,
 				83BCDEEA15E9011E0056275E /* CHYProgressImageViewDemo */,
 				83BCDEE315E9011E0056275E /* Frameworks */,
 				83BCDEE115E9011E0056275E /* Products */,
@@ -97,6 +103,7 @@
 				83BCDEF715E9011E0056275E /* ViewController.m */,
 				83BCDEF915E9011E0056275E /* ViewController_iPhone.xib */,
 				83BCDEFC15E9011E0056275E /* ViewController_iPad.xib */,
+				83BCDF1015E90A580056275E /* homero-simpson.png */,
 				83BCDEEB15E9011E0056275E /* Supporting Files */,
 			);
 			path = CHYProgressImageViewDemo;
@@ -111,6 +118,16 @@
 				83BCDEF215E9011E0056275E /* CHYProgressImageViewDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83BCDF0C15E903F60056275E /* CHYProgressImageView */ = {
+			isa = PBXGroup;
+			children = (
+				83BCDF0D15E9040D0056275E /* CHYPorgressImageView.h */,
+				83BCDF0E15E9040D0056275E /* CHYPorgressImageView.m */,
+			);
+			name = CHYProgressImageView;
+			path = ../CHYProgressImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +188,7 @@
 				83BCDF0715E9015F0056275E /* Icon@2x.png in Resources */,
 				83BCDF0915E901650056275E /* Icon~iPad.png in Resources */,
 				83BCDF0B15E901670056275E /* Icon~iPad@2x.png in Resources */,
+				83BCDF1115E90A580056275E /* homero-simpson.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +202,7 @@
 				83BCDEF115E9011E0056275E /* main.m in Sources */,
 				83BCDEF515E9011E0056275E /* AppDelegate.m in Sources */,
 				83BCDEF815E9011E0056275E /* ViewController.m in Sources */,
+				83BCDF0F15E9040D0056275E /* CHYPorgressImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
