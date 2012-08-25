@@ -11,6 +11,9 @@
 
 @interface ViewController : UIViewController {
     __weak IBOutlet CHYPorgressImageView *_progressImageView;
+    __weak IBOutlet UISlider *_progressSlider;
+    __weak IBOutlet UISwitch *_verticalProgressSwitch;
+    __weak IBOutlet UISwitch *_grayscaleBackgroundSwitch;
 }
 
 - (IBAction)progressValueChanged:(id)sender;

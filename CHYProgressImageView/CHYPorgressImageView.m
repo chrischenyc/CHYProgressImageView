@@ -10,6 +10,7 @@
 
 @interface CHYPorgressImageView ()
 - (void)commonInit;
+- (void)updateMasking;  // use layer masking to display only portion of image
 @end
 
 @implementation CHYPorgressImageView
@@ -47,29 +48,44 @@
 - (void)setProgress:(float)progress
 {
     _progress = progress;
-    [self setNeedsDisplay];
+    [self updateMasking];
 }
 
 - (void)setHasGrayscaleBackground:(BOOL)hasGrayscaleBackground
 {
     _hasGrayscaleBackground = hasGrayscaleBackground;
-    [self setNeedsDisplay];
 }
 
 - (void)setVerticalProgress:(BOOL)verticalProgress
 {
     _verticalProgress = verticalProgress;
-    [self setNeedsDisplay];
+    [self updateMasking];
 }
 
 #pragma mark - drawing
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (void)updateMasking
 {
-    // Drawing code
+    // Create a mask layer and the frame to determine what will be visible in the view.
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    CGRect maskRect;
+    if (_verticalProgress) {
+        maskRect = CGRectMake(0, self.bounds.size.height * (1.f - _progress), self.bounds.size.width, self.bounds.size.height * _progress);
+    }else {
+        maskRect = CGRectMake(0, 0, self.bounds.size.width * _progress, self.bounds.size.height);
+    }
+    
+    // Create a path and add the rectangle in it.
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathAddRect(path, nil, maskRect);
+    
+    // Set the path to the mask layer.
+    [maskLayer setPath:path];
+    
+    // Release the path since it's not covered by ARC.
+    CGPathRelease(path);
+    
+    // Set the mask of the view.
+    self.layer.mask = maskLayer;
 }
-*/
 
 @end

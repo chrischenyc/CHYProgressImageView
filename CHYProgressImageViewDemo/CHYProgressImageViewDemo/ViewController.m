@@ -18,11 +18,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    _progressImageView.progress = _progressSlider.value;
+    _progressImageView.verticalProgress = _verticalProgressSwitch.on;
+    _progressImageView.hasGrayscaleBackground = _grayscaleBackgroundSwitch.on;
 }
 
 - (void)viewDidUnload
 {
     _progressImageView = nil;
+    _progressSlider = nil;
+    _verticalProgressSwitch = nil;
+    _grayscaleBackgroundSwitch = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -37,17 +44,14 @@
 }
 
 - (IBAction)progressValueChanged:(id)sender {
-    UISlider *progressSlider = sender;
-    _progressImageView.progress = progressSlider.value;
+    _progressImageView.progress = _progressSlider.value;
 }
 
 - (IBAction)verticalProgressToggled:(id)sender {
-    UISwitch *vertialProgressSwitch = sender;
-    _progressImageView.verticalProgress = vertialProgressSwitch.on;
+    _progressImageView.verticalProgress = _verticalProgressSwitch.on;
 }
 
 - (IBAction)grayscaleBackgroundToggled:(id)sender {
-    UISwitch *grayscaleBgSwitch = sender;
-    _progressImageView.hasGrayscaleBackground = grayscaleBgSwitch.on;
+    _progressImageView.hasGrayscaleBackground = _grayscaleBackgroundSwitch.on;
 }
 @end
