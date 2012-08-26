@@ -330,6 +330,7 @@
 				83BCDF0315E9011E0056275E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

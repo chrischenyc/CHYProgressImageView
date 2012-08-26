@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface CHYPorgressImageView : UIImageView
+@interface CHYPorgressImageView : UIImageView {
+    UIImage *_originalImage;
+    BOOL _internalUpdating;
+}
 
 @property (nonatomic) float progress;                                       // default 0.0. The image will be partially displayed in proportion to this value.
 @property (nonatomic) BOOL hasGrayscaleBackground;                          // default YES. If set, a duplicated image will be displayed in grayscale in the background, providing viwer an indication of how far the progress has gone.
