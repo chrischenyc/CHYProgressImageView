@@ -22,7 +22,6 @@
 		83BCDF0B15E901670056275E /* Icon~iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83BCDF0A15E901670056275E /* Icon~iPad@2x.png */; };
 		83BCDF0F15E9040D0056275E /* CHYPorgressImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BCDF0E15E9040D0056275E /* CHYPorgressImageView.m */; };
 		83BCDF1115E90A580056275E /* homero-simpson.png in Resources */ = {isa = PBXBuildFile; fileRef = 83BCDF1015E90A580056275E /* homero-simpson.png */; };
-		83BCDF1715E914380056275E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BCDF1615E914380056275E /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +46,6 @@
 		83BCDF0D15E9040D0056275E /* CHYPorgressImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHYPorgressImageView.h; sourceTree = "<group>"; };
 		83BCDF0E15E9040D0056275E /* CHYPorgressImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHYPorgressImageView.m; sourceTree = "<group>"; };
 		83BCDF1015E90A580056275E /* homero-simpson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homero-simpson.png"; sourceTree = "<group>"; };
-		83BCDF1615E914380056275E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83BCDF1715E914380056275E /* QuartzCore.framework in Frameworks */,
 				83BCDEE515E9011E0056275E /* UIKit.framework in Frameworks */,
 				83BCDEE715E9011E0056275E /* Foundation.framework in Frameworks */,
 				83BCDEE915E9011E0056275E /* CoreGraphics.framework in Frameworks */,
@@ -90,7 +87,6 @@
 		83BCDEE315E9011E0056275E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				83BCDF1615E914380056275E /* QuartzCore.framework */,
 				83BCDEE415E9011E0056275E /* UIKit.framework */,
 				83BCDEE615E9011E0056275E /* Foundation.framework */,
 				83BCDEE815E9011E0056275E /* CoreGraphics.framework */,

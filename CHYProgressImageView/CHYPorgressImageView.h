@@ -8,7 +8,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <QuartzCore/QuartzCore.h>
 
 @interface CHYPorgressImageView : UIImageView {
     UIImage *_originalImage;
