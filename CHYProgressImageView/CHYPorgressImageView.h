@@ -1,5 +1,6 @@
 //
 //  CHYPorgressImageView.h
+//  Version 0.1
 //  CHYProgressImageViewDemo
 //
 //  Created by Chen Chris on 8/25/12.
