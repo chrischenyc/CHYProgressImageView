@@ -8,6 +8,8 @@ CHYProgressImageView is an iOS drop-in `UIImageView` subclass that displays its 
 [![](https://dl.dropbox.com/u/12111329/github/CHYProgressImageView/3.jpg)](https://dl.dropbox.com/u/12111329/github/CHYProgressImageView/3.jpg)
 [![](https://dl.dropbox.com/u/12111329/github/CHYProgressImageView/4.jpg)](https://dl.dropbox.com/u/12111329/github/CHYProgressImageView/4.jpg)
 
+What the demo on Youtube: http://youtu.be/uTUluXUgRQM
+
 Requirements
 ============
 
