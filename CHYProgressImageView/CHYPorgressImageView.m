@@ -156,7 +156,7 @@
 
 - (void)setProgress:(float)progress
 {
-    _progress = progress;
+    _progress = MIN(MAX(0.f, progress), 1.f);
     [self updateDrawing];
 }
 
