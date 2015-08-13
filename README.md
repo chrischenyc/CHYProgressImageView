@@ -1,6 +1,11 @@
 Deprecated! No longer maintained!
 
-Please use: https://github.com/Marxon13/M13ProgressSuite which provides similar features and much more.
+For similar features, please use: 
+this https://github.com/Marxon13/M13ProgressSuite (Objc)
+
+or, this https://github.com/poolqf/FillableLoaders (Swift)
+
+thanks for visiting, see you later!
 
 CHYProgressImageView
 ====================
