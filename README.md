@@ -1,3 +1,7 @@
+Deprecated! No longer maintained!
+
+Please use: https://github.com/Marxon13/M13ProgressSuite which provides similar features and much more.
+
 CHYProgressImageView
 ====================
 
